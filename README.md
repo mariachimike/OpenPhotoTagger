@@ -10,7 +10,7 @@ jQuery 1.4.2+ and jQuery UI 1.8+ must be included for this plugin to work.
 
 ### Usage Examples
 
-$('.taggable').openPhotoTagger({
+	$('.taggable').openPhotoTagger({
 				photoId: '1',
 				cbAutoComplete : function(str, list) {
 					
