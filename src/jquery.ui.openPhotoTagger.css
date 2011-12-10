@@ -1,0 +1,84 @@
+/**
+ * OpenPhotoTagger Component CSS
+ */
+.opt_container {
+	position: relative;
+}
+
+.tagging_enabled {
+	cursor: crosshair;
+	outline: 2px solid #faa;
+}
+
+.opt_tag_box {
+	background: #000;
+	background: rgba(0,0,0, 0.3);
+	border: 5px solid white;
+	border-radius: 5px;
+	box-shadow: 0 0 3px #000;
+	filter: alpha(opacity = 30);
+	position: absolute;
+}
+
+.opt_completed_tag_box {
+	border: 1px solid transparent;	
+	border-radius: 4px;
+	position: absolute;
+	text-align: center;
+}
+
+.opt_completed_tag_box .p {
+	background: rgb(49, 49, 49);
+	background: rgba(49, 49, 49, 0.25);
+	border-radius: 4px;
+	color: white;
+	filter: alpha(opacity = 25);
+	margin: 0.5em;
+}
+
+.opt_completed_tag_box {
+	display: none;
+}
+
+
+.opt_container:hover .opt_completed_tag_box,
+.tagging_enabled .opt_completed_tag_box {
+	display: block;
+}
+
+.opt_completed_tag_box .remove_button {
+	display: none;
+}
+
+.tagging_enabled .opt_completed_tag_box .remove_button {
+	display: inline;
+}
+
+.opt_completed_tag_box:hover {
+	background: #000;
+	background: rgba(0,0,0, 0.3);
+	border: 1px solid #333;		
+	filter: alpha(opacity = 30);
+}
+
+.opt_autocomplete_list {
+	background: white;
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+.opt_autocomplete_list li {
+	font-size: 12px;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0.3em 0.4em;
+}
+
+.opt_autocomplete_list li.active,
+.opt_autocomplete_list li:hover {
+	background: #333;
+	color: white;
+	cursor: pointer;
+}
